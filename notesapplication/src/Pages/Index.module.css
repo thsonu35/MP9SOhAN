@@ -21,18 +21,55 @@ body  {
     height: 100%;
     color: black;
     background-color: white;
-    
-
+    position: relative;
 }
 .notName {
-    background-color: grey;
-    width: 80%;
     align-self: center;
-    height: 70vh;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid #ccc;  */
+    position: absolute;
+    top :17%;
+    bottom: 10%;
+}
+
+.scrollableContainer {
+    height: 80vh;
+    overflow-y: auto; 
 
 }
+
+
+/* Define the main scrollbar */
+.scrollableContainer::-webkit-scrollbar {
+    width: 10px; /* Width of the main scrollbar */
+}
+
+/* Define the track (the area on which the thumb moves) */
+.scrollableContainer::-webkit-scrollbar-track {
+    background: #dddddd; /* Background color of the track */
+}
+
+/* Define the thumb (the draggable handle) of the main scrollbar */
+.scrollableContainer::-webkit-scrollbar-thumb {
+    background: #404040d9; /* Color of the main scrollbar thumb */
+}
+
+/* Define the smaller scrollbar */
+.scrollableContainer::-webkit-scrollbar-thumb:hover {
+    background: #787878d9; /* Color of the main scrollbar thumb on hover */
+}
+
+/* Define the smaller scrollbar */
+.scrollableContainer::-webkit-scrollbar-thumb:vertical {
+   width: 5px;
+    height: 5px; /* Height of the smaller scrollbar */
+    background: #ffffffba; /* Color of the smaller scrollbar */
+    border-radius: 10%; /* Border radius of the smaller scrollbar */
+}
+
+
 
 
 .lists {
@@ -41,7 +78,6 @@ body  {
     justify-self: center;
     align-self: center;
     margin: 44px 0 20px 0;
-
     
 }
 
@@ -53,7 +89,6 @@ body  {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(218, 229, 245, 1);
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,10 +114,9 @@ h1 {
 }
 
 .ButtonAlign{
-    flex-wrap: wrap;
-    align-self: self-end;
-    display: fixed;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
 }
 
 button {
@@ -92,7 +126,8 @@ button {
     border-style: none;
     font-size: 55px;
     align-self: flex-end;
-    
+    background-color: blue;
+    color: #fefefe;
 }
 
 

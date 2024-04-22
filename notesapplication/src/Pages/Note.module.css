@@ -1,0 +1,22 @@
+
+
+.note_container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+}
+
+.note_words{
+    background-color: burlywood;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note_name{
+    font-size: 16px;
+}
