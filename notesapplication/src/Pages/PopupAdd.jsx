@@ -7,7 +7,7 @@ function PopupAdd({ onClose }) {
 
   const handleCreateGroup = () => {
     console.log("Creating group:", groupName, "with color:", groupColor);
-    // Add logic to create the group
+    
     onClose(); // Close the pop-up after group creation
   };
 
